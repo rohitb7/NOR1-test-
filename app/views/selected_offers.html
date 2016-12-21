@@ -1,0 +1,26 @@
+<h4>You are Upgraded to: </h4>
+<div ng-controller="OfferCtrl" class="">
+    <div ng-repeat="showSelected in mainDisplayConfirmation track by $index" class="">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{showSelected.image_url}}">
+                        <span class="card-title orange-text"><b>{{showSelected.bookedRoomCode}}</b></span>
+                    </div>
+                    <div class="card-action">
+                        <div>
+                            <div class="card-action">
+                                <strong><a>{{showSelected.short_desc}} <br>
+                                 <strong class="blue-text">@ {{showSelected.price}}</strong</a></strong>
+                            </div>
+                            <div class="card-action">
+                              {{showSelected.long_desc}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

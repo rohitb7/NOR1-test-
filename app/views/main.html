@@ -1,0 +1,44 @@
+<div ng-controller="MainCtrl">
+    <div class="row " id="minHeight">
+        <div class="col s12 m12 offset-m3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{bookingDetailObject.roomImage}}">
+                    <span class="card-title orange-text "> <b>{{bookingDetailObject.roomShortDescription}}</b>
+               <div class="card-content">
+             
+            </div></span>
+                </div>
+                <div class="card-action">
+                    Booked by: <strong>{{bookingDetailObject.firstName}}  {{bookingDetailObject.lastName}}</strong>
+                </div>
+                <div class="card-action ">
+                    Price:<strong> {{bookingDetailObject.price | currency}}</strong>
+                </div>
+                <div class="card-action">
+                    <strong>Offers</strong>
+                </div>
+                <div class="card-action">
+                    <div ng-repeat="offer in bookingDetailObject.mutuallyExclusiveOffers track by $index">
+                        <input type="radio" name="mutuallyExclusiveOffer" ng-value="offer.item_id" id="radioButton{{$index}}" ng-model="bookingDetailObject.selectedMutuallyexclusiveId">
+                        <label for="radioButton{{$index}}">
+                            <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="{{offer.long_desc}}">{{offer.short_desc}} @ <strong>{{offer.price}}</strong></a>
+                        </label>
+                        <br/>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <div ng-repeat="offer in bookingDetailObject.otherOffers">
+                        <input type="checkbox" id="checkBox{{$index}}" ng-model="offer.selected">
+                        <label for="checkBox{{$index}}">
+                            {{offer.short_desc}} @ <strong>{{offer.price}}</strong>
+                        </label>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <input type="button" name="sendOffers" value="Select Offers" ng-click="submitSelected()">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

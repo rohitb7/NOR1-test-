@@ -1,0 +1,24 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.darkColor {
+    color: black;
+}
+
+.card {
+    width: 400px;
+
+}
+
+.float-right {
+    float: left;
+}
+
+
+.col {
+
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLGdCQUFnQjtJQUNoQixtQkFBbUI7Q0FDdEI7O0FBRUQ7SUFDSSxhQUFhO0NBQ2hCOztBQUVEO0lBQ0ksYUFBYTs7Q0FFaEI7O0FBRUQ7SUFDSSxZQUFZO0NBQ2Y7OztBQUdEOztDQUVDIiwiZmlsZSI6Im1haW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaHRtbCxcbmJvZHkge1xuICAgIG1heC13aWR0aDogMTAwJTtcbiAgICBvdmVyZmxvdy14OiBoaWRkZW47XG59XG5cbi5kYXJrQ29sb3Ige1xuICAgIGNvbG9yOiBibGFjaztcbn1cblxuLmNhcmQge1xuICAgIHdpZHRoOiA0MDBweDtcblxufVxuXG4uZmxvYXQtcmlnaHQge1xuICAgIGZsb2F0OiBsZWZ0O1xufVxuXG5cbi5jb2wge1xuXG59Il19 */

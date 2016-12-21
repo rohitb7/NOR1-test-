@@ -1,0 +1,23 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.darkColor {
+    color: black;
+}
+
+.card {
+    width: 400px;
+
+}
+
+.float-right {
+    float: left;
+}
+
+
+.col {
+
+}
